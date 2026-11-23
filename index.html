@@ -83,6 +83,14 @@ section h2{font-size:clamp(28px,4vw,40px);margin-bottom:28px}
 .proj:nth-child(4) .tags span{border-color:var(--c)}
 .proj a.link{font-weight:600;text-decoration:underline;text-underline-offset:4px}
 
+.exp{padding:26px 0;border-top:1px solid var(--line)}
+.exp:last-child{border-bottom:1px solid var(--line)}
+.exp-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:6px 24px;margin-bottom:10px}
+.exp h3{font-size:22px}
+.exp .date{font-weight:600;font-size:15px;color:var(--a)}
+.exp ul{margin:0;padding-left:20px;color:var(--muted);max-width:68ch}
+.exp li{margin:4px 0}
+.exp li::marker{color:var(--a)}
 .contact p{max-width:52ch;color:var(--muted);margin:0 0 24px}
 footer{padding:28px 0 40px;color:var(--muted);font-size:15px;border-top:1px solid var(--line)}
 
@@ -111,6 +119,7 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:15px;border-top:1px soli
       <a href="#tentang" data-i="n1">Tentang</a>
       <a href="#skill" data-i="n2">Skill</a>
       <a href="#proyek" data-i="n3">Proyek</a>
+      <a href="#organisasi" data-i="n5">Organisasi</a>
       <a href="#kontak" data-i="n4">Kontak</a>
     </nav>
     <div class="tools">
@@ -200,6 +209,20 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:15px;border-top:1px soli
           <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>Vercel</span></div>
           <a class="link" href="https://panganmap.vercel.app" target="_blank" rel="noopener" data-i="od">Buka dashboard</a>
         </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="organisasi">
+    <div class="wrap">
+      <h2 data-i="t5">Organisasi</h2>
+      <article class="exp">
+        <div class="exp-head"><h3>Generasi Baru Indonesia (GenBI) PENS</h3><span class="date" data-i="d1">Mei 2026 – Sekarang</span></div>
+        <ul><li data-i="g1">Anggota Divisi Kesejahteraan Masyarakat (Kesma)</li><li data-i="g2">Koordinator Divisi Kestari, Event GenBI Mancing 2026</li></ul>
+      </article>
+      <article class="exp">
+        <div class="exp-head"><h3>Lembaga Minat Bakat (LMB) PENS</h3><span class="date" data-i="d2">Maret 2025 – Sekarang</span></div>
+        <ul><li data-i="l1">Staff Ahli Departemen Event</li><li data-i="l2">Steering Committee dan Koordinator Divisi Kestari (2025–2026)</li></ul>
       </article>
     </div>
   </section>
@@ -301,6 +324,7 @@ p3:"Outside class, I’m active in the Generasi Baru Indonesia (GenBI) community
 s1:"Programming languages",s2:"Machine learning and AI",s3:"Data and tools",gg:"Git and GitHub",hc:"HTML and CSS",
 ap:"An IoT-based air quality monitoring and prediction system. I designed the user interface and built an interactive web dashboard with a public feature that visualizes IoT sensor data and machine learning analytics in real time.",
 sp:"An information and analysis system for food security in Indonesia. I built the landing page and an interactive analytics dashboard that maps food security conditions across 514 regencies and cities (2018\u20132026) to support the SDG 2 target.",
+n5:"Organizations",t5:"Organizations",d1:"May 2026 – Present",d2:"March 2025 – Present",g1:"Member, Community Welfare Division (Kesma)",g2:"Coordinator, Kestari Division, GenBI Mancing 2026 event",l1:"Expert Staff, Events Department",l2:"Steering Committee and Kestari Division Coordinator (2025–2026)",
 od:"Open dashboard",cp:"Want to talk about data, or collaborate? Reach out through any of these.",em:"Send email",
 ft:"\u00a9 2026 Siti Cholilah M. R. Built with HTML, CSS, and a little JavaScript."};
 var root=document.documentElement,els=[].slice.call(document.querySelectorAll('[data-i]'));
